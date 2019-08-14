@@ -1,8 +1,8 @@
 # Randomization
 
-Verilog Constraint Random Verification
+# Verilog Constraint Random Verification
 
-Verilog has system function $random, which can be used to generate random input vectors. With this approach,we can generate values which we wouldnt have got, if listed manually. 
+Verilog has system function $random, which can be used to generate random input vectors. With this approach,we can generate values which we wouldnt have got, if listed manually. These constraints are at very low level of abstraction. 
 
 The below example shows the generation of numbers from 0 to N.
 
@@ -90,3 +90,6 @@ add = 42
 add = 49
 
            
+# System Verilog Constraint Random Verification
+
+Verification needs a better way to describe the constraints. SystemVerilog has randomization constructs to support todays verification needs. 
