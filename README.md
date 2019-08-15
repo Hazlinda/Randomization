@@ -30,10 +30,15 @@ The below example shows the generation of numbers from 0 to N.
 V C S   S i m u l a t i o n   R e p o r t
  
 add_1 = x;  add_2 = x;          add_3 = x
+
 add_1 = 8;  add_2 = 4294967287; add_3 = 7
+
 add_1 = -9; add_2 = 7;          add_3 = 7
+
 add_1 = -1; add_2 = 4294967292; add_3 = 1
+
 add_1 = 9;  add_2 = 8;          add_3 = 7
+
 add_1 = 9;  add_2 = 2;          add_3 = 9
           
        
@@ -56,10 +61,15 @@ Some specification require the range to start from non Zero number. MIN + {$rand
 V C S   S i m u l a t i o n   R e p o r t 
 
 add = 48
+
 add = 47
+
 add = 47
+
 add = 47
+
 add = 47
+
  
  
 This below example show how to generate a random number between two ranges. The number should be between MIN1 and MAX1 or MIN2 and MAX2. 
@@ -84,9 +94,13 @@ This below example show how to generate a random number between two ranges. The 
 V C S   S i m u l a t i o n   R e p o r t 
 
 add = 97
+
 add = 47
+
 add = 47
+
 add = 42
+
 add = 49
 
      module Tb(); 
@@ -112,12 +126,16 @@ V C S   S i m u l a t i o n   R e p o r t
 
 seed is set           2
 | num= 1 || num= 2 || num= 7 || num= 2 || num= 1 || num= 7 || num= 4 || num= 2 || num= 3 || num= 1 | 
+
  seed is set           2
 | num= 1 || num= 2 || num= 7 || num= 2 || num= 1 || num= 7 || num= 4 || num= 2 || num= 3 || num= 1 | 
+
  seed is set           2
 | num= 1 || num= 2 || num= 7 || num= 2 || num= 1 || num= 7 || num= 4 || num= 2 || num= 3 || num= 1 | 
+
  seed is set           2
 | num= 1 || num= 2 || num= 7 || num= 2 || num= 1 || num= 7 || num= 4 || num= 2 || num= 3 || num= 1 | 
+
  seed is set           2
 | num= 1 || num= 2 || num= 7 || num= 2 || num= 1 || num= 7 || num= 4 || num= 2 || num= 3 || num= 1 | 
            
@@ -145,9 +163,13 @@ Example unsigned numbers
 V C S   S i m u l a t i o n   R e p o r t 
 
 address =   98710838
+
 address = 1474208060
+
 address = 3196053373
+
 address =  816460770
+
 address =   41501707
 
 
@@ -178,10 +200,13 @@ V C S   S i m u l a t i o n   R e p o r t
 
 seed is set           2
 |num= 1||num= 2||num= 7||num= 2||num= 1||num= 7||num= 4||num= 2||num= 3||num= 1| 
+
 seed is set           2
 |num= 1||num= 2||num= 7||num= 2||num= 1||num= 7||num= 4||num= 2||num= 3||num= 1| 
+
 seed is set           2
 |num= 1||num= 2||num= 7||num= 2||num= 1||num= 7||num= 4||num= 2||num= 3||num= 1| 
+
 seed is set           2
 |num= 1||num= 2||num= 7||num= 2||num= 1||num= 7||num= 4||num= 2||num= 3||num= 1| 
            
@@ -215,9 +240,13 @@ Example random in range
 V C S   S i m u l a t i o n   R e p o r t 
 
 num_1 = 22, num_2 = 52
+
 num_1 = 21, num_2 = 50
+
 num_1 = 21, num_2 = 55
+
 num_1 = 24, num_2 = 53
+
 num_1 = 20, num_2 = 55
            
 
@@ -242,9 +271,13 @@ Example when minval is omitted
 V C S   S i m u l a t i o n   R e p o r t
 
 num_1 = 2, num_2 = 2
+
 num_1 = 1, num_2 = 0
+
 num_1 = 3, num_2 = 5
+
 num_1 = 0, num_2 = 3
+
 num_1 = 2, num_2 = 5
            
 
@@ -268,11 +301,17 @@ This gives better control over the $random,as it allows to add constraints using
 R E S U L T
 
 Randomization sucessfull:Var=   1330450070
+
 Randomization sucessfull:Var= -19672867630
+
 Randomization sucessfull:Var=  13487005760
+
 Randomization sucessfull:Var=  -2062410490
+
 Randomization sucessfull:Var=  14929494250
+
 Randomization sucessfull:Var= -13791963250
+
 Simulation complete 
 
 
@@ -293,9 +332,16 @@ In the following example Variable Var is randomized and MIN is not randomized.
          end
      endmodule
 
+
+R E S U L T
+
 Randomization sucessfull:Var=          620 Min = 50
+
 Randomization sucessfull:Var=          680 Min = 50
+
 Randomization sucessfull:Var=          780 Min = 50
+
 Randomization sucessfull:Var=          900 Min = 50
+
 Randomization sucessfull:Var=          810 Min = 50
 
