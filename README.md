@@ -524,11 +524,11 @@ addr_1 will get random value within the range start_addr and end_addr,
       		$display("--------------------------------");
      	        end
   	     end
-ww	endmodule
+	endmodule
  
  
  
-  V C S   S i m u l a t i o n   R e p o r t 
+  	V C S   S i m u l a t i o n   R e p o r t 
  	---------------------------------
 	start_addr = 12, end_addr = 13
 	addr = 12
@@ -541,7 +541,7 @@ ww	endmodule
 	--------------------------------
          
 	 
-inverted inside example
+Inverted inside example
 
 In the example below,
 addr will get the random value outside the range start_addr and end_addr. this is done by using negation or invert operator (!)
