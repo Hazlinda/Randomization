@@ -583,3 +583,36 @@ V C S   S i m u l a t i o n   R e p o r t
 	addr = 11
 	--------------------------------
            
+
+
+Bidirectional constraint example 
+
+		class packet;
+		  rand bit [3:0] a;
+		  rand bit [3:0] b;
+		  rand bit [3:0] c;
+
+		  constraint a_value { a == b + c; }
+		  constraint b_value { b > 6; }
+		  constraint c_value { c < 8; }
+		endclass
+
+		module bidirectional_constr;
+		  initial begin
+		    packet pkt;
+		    pkt = new();
+		    repeat(5) begin
+		      pkt.randomize();
+		      $display("Value of a = %0d \tb = %0d \tc =%0d",pkt.a,pkt.b,pkt.c);
+		    end
+		  end
+		endmodule
+		
+	
+V C S   S i m u l a t i o n   R e p o r t 
+
+		Value of a = 8 b = 8 c =0
+		Value of a = 0 b = 14 c =2
+		Value of a = 14 b = 14 c =0
+		Value of a = 6 b = 15 c =7
+		Value of a = 13 b = 11 c =2
